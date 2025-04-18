@@ -1,0 +1,543 @@
+/*css style for navbar*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+.navbar{
+
+    background-color: rgba(255, 255, 255, 0.9); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px  40px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);   
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #cc3366;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.nav-links li{
+    position: relative;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+.nav-links a:hover{
+    color: #cc3366;
+}
+/*css style for dropdown*/
+.dropdown-menu{
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: none;
+    list-style: none;
+}
+.dropdown-menu li  a{
+    display: block;
+    padding: 10px 15px;
+
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+/* css style for home page div section*/
+.hero-section{
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px;
+}
+.hero-text h1{
+      color: black;
+      font-size: 48px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+}
+.hero-text p{
+    color: black;
+    font-size: 20px;
+}
+/* Responsive navbar and dropdown*/
+@media (max-width:768px)
+{
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .hero-section{
+        height: 315vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    }
+    .nav-links li{
+        width: 100%;
+    }
+    .nav-linksa{
+        display: block;
+        width: 100%;
+    }
+    .hero-text h1{
+        font-size: 24px;
+    }
+}
+/* css style for budget calculator page*/
+.budget{
+    padding: 100px;
+}
+body {
+    font-family: Arial, sans-serif;          
+    background-color: #f4f4f9; 
+    color: black; 
+}
+
+table {
+    background-color: pink; 
+    padding: 20px;
+    margin:0 auto;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+td {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px; 
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+    display: inline-block;
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid pink;
+    border-radius: 5px; 
+    background-color: #ffffff; 
+    color: #333; 
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color:palevioletred;
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: lightpink;
+    color:black;
+}
+
+#heading {
+    color: palevioletred; 
+    font-weight: bold; 
+}   
+/*responsive layout for budget calculator*/
+@media (max-width:768px)
+{
+    .budget{
+        padding: 300px;
+    }
+    td {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }   
+}
+/*css style for venue page*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: white;
+} 
+.venue-section{
+    padding: 40px 20px;
+    text-align: center;
+}
+.venue-section h1{
+    padding: 45px;
+    font-size: 25px;
+    color: #cc3366;
+}
+.venue-section p{
+    padding: 0;
+    color: #555;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.venues{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+.venue-card{
+    width: 400px;
+    height: 350px;
+    background-color: lightpink;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    overflow: hidden;
+}
+.venue-card:hover{
+    transform: scale(1.03);
+}
+.venue-card img{
+    width: 100%;
+    height: 50%;
+}
+.venue-content{
+    padding: 10px;
+}
+.venue-content h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.venue-content p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+@media (max-width:768px){
+    body{
+        background-color: white;
+    }
+    .venues{
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+    }   
+}
+/*css style for inquiry  & booking page*/
+.booking{
+    padding: 100px;
+}
+body {
+    font-family: Arial, sans-serif;          
+    background-color: #f4f4f9; 
+    color: black; 
+}
+
+table {
+    background-color: pink; 
+    padding: 20px;
+    margin:0 auto;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+td {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="number"],textarea {
+    display: inline-block;
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid pink;
+    border-radius: 5px; 
+    background-color: #ffffff; 
+    color: #333; 
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color:palevioletred;
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: lightpink;
+    color:black;
+}
+
+#heading {
+    color: palevioletred; 
+    font-weight: bold;       
+}
+/*css style for caterers page*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.catering {
+   text-align: center;
+   padding: 100px 20px 20px;
+   background: #ffe0e9;
+   color: #8c2d3e;
+   border-bottom: 2px solid #eac4d5;
+}
+
+.highlight-catering {
+   color: #8c2d3e;
+   font-weight: 600;
+   font-style: italic;
+   text-shadow: 0.5px 0.5px 1px rgba(140, 45, 62, 0.1);
+}
+
+.catering h1 {
+   font-size: 40px;
+   font-weight: bold;
+   margin-bottom: 10px;
+   font-family: 'Georgia', serif;
+   letter-spacing: 1px;
+   text-shadow: 1px 1px 2px rgba(140, 45, 62, 0.1);
+}
+
+.catering p {
+   font-size: 18px;
+   color: black;
+   font-style: italic;
+   margin-top: 5px;
+}
+
+.catering-heading {
+   text-align: center;
+   border-radius: 8px;
+   margin: 40px auto 20px; 
+}
+
+.catering-heading h2 {
+  color: #8c2d3e; /* rose red */
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.catering-heading p {
+  color:black;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.catering-services {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ margin: 40px auto;
+ max-width: 1200px;   
+ border-radius: 10px;
+ box-shadow: 0 4px 10px rgba(140, 45, 62, 0.05);    
+}
+
+.service {
+    background-color:pink;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;        
+    text-align: center;
+    overflow: hidden;
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.service-details {
+    padding: 15px;
+}
+
+.service h3 {
+    color: #8c2d3e;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8c2d3e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin:5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #d76a7e;
+    color:#8c2d3e;
+}
+
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .catering-services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 80%;
+    }
+}
+
+.service:hover {
+   transform: translateY(-5px);        
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.search-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 30px auto;
+   max-width: 600px;   
+   gap: 10px;
+}
+
+.search-container input[type="text"] {
+  width: 70%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #eac4d5;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-container button {
+ padding: 10px 20px;
+ font-size: 16px;
+ background-color: #8c2d3e;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ font-weight: bold;
+ transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+ background-color: #d76a7e;
+ color: #fff;
+}
+/*css style for footer*/
+body{
+    margin: 0;
+    font-family: Georgia,serif;
+}
+.footer{
+    background-color: #fff;
+    padding: 12px;
+    color: black;
+}
+.footer-logo{
+    text-align: center;
+    margin-bottom: 18px;
+}
+.footer-logo img{
+    max-width: 150px;
+}
+.footer-section{
+    margin-bottom: 18px;
+}
+.footer-section h3{
+    margin-bottom: 18px;
+}
+.footer-section ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer-section ul li{
+    margin-bottom: 5px;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-links > div{
+    margin: 16px 0;
+}
+.footer-links ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer-links li{
+    margin-bottom: 8px;
+}
+@media (max-width:768px){
+    .footer-section{
+        font-size: 10px;
+    }
+}
