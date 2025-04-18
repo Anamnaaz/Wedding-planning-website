@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Inquiry & Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Dreamy Destiny</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li  class="dropdown">
+                    <a href="vendor.html">Vendors</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="photograph.html">Photographers</a></li>
+                        <li><a href="caterers.html">Caterers</a></li>
+                        <li><a href="venue.html">Venues</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="budgetcalculator.html">Budget Calculator</a></li>
+                    <li><a href="booking.html">Inquiry & Booking</a></li>
+                </li>
+            </ul>
+        </nav>
+     </header>
+     <section class="booking">
+    <form name="inquiryform">
+        <center><h1 id="heading">Wedding Booking Inquiry Form</h1></center>
+        <center><h2>Plan Your Dream Wedding With Us </h2></center>
+        <table bgcolor="white" align="center">
+
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" placeholder="Name"></input></td><br>
+            </tr>
+
+            <tr>
+                <td>E-mail:</td>
+                <td><input type="email" placeholder="E-mail"></input></td><br>
+            </tr>
+
+            <tr>
+                <td>Contact Number:</td>
+                <td><input type="text" placeholder="Contact"></input></td><br>
+            </tr>
+
+            <tr>
+                <td>Preferred Wedding Date:</td>
+                <td><input type="date" placeholder="dd-mm-yyyy"></input></td><br>
+            </tr>
+
+            <tr>
+                <td>Number of Guests:</label></td>
+                <td><input type="number" placeholder="e.g. 200"></td>
+            </tr>
+
+            <tr>
+                <td>Venue/City:</td>
+                <td><input type="text" placeholder="City"></input></td><br>
+            </tr>
+
+            <tr>
+                <td>Types of Services Required:</td>
+                <td>
+                    <input type="checkbox" name="service">Photographers</input><br>
+                    <input type="checkbox" name="service">Caterers</input><br>
+                    <input type="checkbox" name="service">Venues</input><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Special Request/Message:</td>
+                <td><textarea name="address"  placeholder="Write a Message..." rows="6" cols="15"></textarea></td>
+            </tr>
+
+         
+            <tr>
+              <td>
+                 <input type="submit" name="Submit" value="Submit"></input>
+                 <input type="reset" name="Reset" value="Reset"></input>
+              </td> 
+            </tr>  
+    </form>
+     </section>
+</body>
+</html>
