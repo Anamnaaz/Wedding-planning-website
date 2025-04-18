@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wedding Catering</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    /* css style for contact us form*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 40px;
+    color: #333;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #8c2d3e;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eac4d5;
+    border-radius: 5px;
+}
+
+.contact-btn {
+    background-color: #8c2d3e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin:5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #d76a7e;
+    color: #8c2d3e;
+}
+
+.btn-row {
+    text-align: center;
+}
+
+.back-btn {
+    background-color: #eac4d5;
+    color: #8c2d3e;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+  background-color: #d76a7e;
+  color: white;
+}
+</style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <form name="Contact Us">
+        <table>
+            <tr>
+                <td>Your Name:</td>
+                <td><input type="text" placeholder="Enter Your Name"></td>
+            </tr>
+
+            <tr>
+                <td> Email:</td>
+                <td><input type="email" placeholder="Enter Your E-mail ID"></td>
+            </tr>
+            
+            <tr>
+                <td>Your Message:</td>
+                <td><textarea id="message" name="message" rows="6" cols="10"></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="btn-row">
+                    <button type="submit" class="contact-btn">Send Message</button>
+                    <button type="reset" class="contact-btn">Reset</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="btn-row">
+                    <a href="caterers.html" class="contact-btn back-btn">← Return to Wedding Catering</a>
+
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>
